@@ -1,0 +1,10 @@
+<p>Edit the year</p>
+<%= form_with(url: month_path(:year), method: :put, local: true) do |form| %>
+    <p>
+      <%= form.label :rok %><br>
+      <%= form.text_field :title, :value => @newyear %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>

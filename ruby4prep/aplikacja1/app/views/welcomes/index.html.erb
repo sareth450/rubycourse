@@ -1,0 +1,31 @@
+
+
+<div id="kom">
+<p>Tresc komunikatu: <%= @komunikat%></p>
+</div>
+<br>
+<div id="kom2">
+    <% for i in 0...@ilosc %>
+    <p><%=@komunikat%></p>
+    <%end%>
+</div>
+<br>
+
+<div id="tab">
+<% i=1 %>
+    <% @tablica.each do |x| %>
+    <p> tablica[<%=i%>] = <%= x %> </p>
+    <% i+=1 %>
+    <% end %> 
+</div>
+<br>
+
+<div id="hasz">
+    <% @hasz.each  do |key, value| %>
+    <p> hasz[<%= key %>] = <%= value %> </p>
+    <% end %>
+</div>
+
+<% #console() %>
+<% #raise('Error') %>
+

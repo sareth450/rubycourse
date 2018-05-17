@@ -1,0 +1,19 @@
+<div id="list">
+    <ul>
+    <% @clientBase.each  do |val| %>
+    <li><a href="/shop/<%= val[:idx]%>"><%= val[:imie] %>_<%= val[:nazwisko] %></a>	<%= form_with(url: edit_shop_path(val[:idx]), method: :get, local: true)  do |form| %>
+     <p>
+        <%= form.label :Change_client?%><br>
+     </p>
+    <p>
+
+      <%= submit_tag("edit") %>
+    </p>
+  <% end %>
+    </div>
+</li>
+    <% end %>
+    </ul>
+</div>
+
+

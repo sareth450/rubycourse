@@ -1,0 +1,1 @@
+ruby -ne 'Counter= Hash.new; $_.to_s.gsub(/\s+/m, " ").strip.split(" ").each { |x| Counter.has_key?(x.length.to_s) ? Counter[x.length.to_s]+=1 : Counter[x.length.to_s] = 1 }; Counter.sort.each { |key,value| puts key + "  " + value.to_s + "\n"};' < file.txt 

@@ -1,0 +1,11 @@
+<div id="year">
+	<p><%= year -%></p>
+</div>
+<div id="list">
+    <ul>
+    <% @months.each  do |key, value| %>
+    <li><a href="/months/<%= key %>"><%= value %></a></li>
+    <% end %>
+    </ul>
+</div>
+

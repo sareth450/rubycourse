@@ -1,0 +1,26 @@
+
+<%= form_with(url:	shop_path(), method: :put, local: true) do |form| %>
+	<p>
+      <%= form.label :nam %><br>
+      <%= form.text_field :title1, :value => @nname %>
+    </p>
+    <p>
+	<p>
+      <%= form.label :sur %><br>
+      <%= form.text_field :title2, :value => @nsur %>
+    </p>
+<p>
+      <%= form.label :sm %><br>
+      <%= form.text_field :title3, :value => @nsm %>
+    </p>
+<p>
+      <%= form.label :em %><br>
+      <%= form.text_field :title4, :value => @nem %>
+    </p>
+
+      <%= form.submit %>
+    </p>
+  <% end %>
+~                                                                               
+~                                                                               
+~                        
